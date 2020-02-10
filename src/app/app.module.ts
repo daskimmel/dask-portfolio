@@ -2,13 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SkillsComponent } from './pages/skills/skills.component';
+import { TileComponent } from './ui/tile/tile.component';
+import { TileGroupComponent } from './ui/tile-group/tile-group.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NavigationComponent } from './ui/navigation/navigation.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SkillsComponent,
+    TileComponent,
+    TileGroupComponent,
+    HomeComponent,
+    NavigationComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

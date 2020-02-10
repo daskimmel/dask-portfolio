@@ -1,0 +1,15 @@
+.tile-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.tilted-group {
+    transform: translateX(0px) translateY(0px) rotateX(45deg) rotateZ(45deg);
+    position: fixed;
+    z-index: 2;
+    transform-origin: left top;
+    padding-top: 10rem;
+    padding-left: 20rem;
+    width: calc(80% + 20rem);
+}
