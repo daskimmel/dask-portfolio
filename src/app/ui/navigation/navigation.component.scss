@@ -1,4 +1,17 @@
 .navigation-bar {
     height: auto;
     overflow: auto;
+    font-family: "Century Gothic", sans-serif;
+
+    a{
+        text-decoration: none;
+        transition: .5s;
+        color: white;
+    }
+
+    a:hover{
+        letter-spacing: 5px;
+        transition: .5s;
+    }
+
 }

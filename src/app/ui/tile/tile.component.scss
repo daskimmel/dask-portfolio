@@ -1,11 +1,28 @@
 .tile{
     height: 100px;
     width: 100px;
-    border: solid red 1px;
     padding: 5px;
-    margin: 5px;
+    margin: 10px 5px;
+    transition: 1s;
+    cursor: crosshair;
+    background-color: white;
+    position: relative;
+}
+
+.tile:hover {
+    background-color: transparent;
+    transform: translateX(-5px) translateY(-15px);
+    transition: 1s;
 }
 
 .logo{
     height: 100%;
+}
+
+.tile-name{
+    margin-top: -20px;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Century Gothic", sans-serif;
+    color: white;
 }
