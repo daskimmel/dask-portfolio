@@ -8,6 +8,7 @@ import { TileComponent } from './ui/tile/tile.component';
 import { TileGroupComponent } from './ui/tile-group/tile-group.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavigationComponent } from './ui/navigation/navigation.component';
+import { ExperienceComponent } from './pages/experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NavigationComponent } from './ui/navigation/navigation.component';
     TileComponent,
     TileGroupComponent,
     HomeComponent,
-    NavigationComponent
+    NavigationComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,

@@ -23,6 +23,11 @@ export class SkillsComponent implements OnInit {
         {'name': 'GIT', 'image': 'assets/images/git_logo.png'},
         {'name': 'POSTGRES', 'image': 'assets/images/postgres_logo.png'},
         {'name': 'REDUX', 'image': 'assets/images/redux_logo.png'},
+        {'name': 'NGRX', 'image': 'assets/images/ngrx_logo.png'},
+        {'name': 'RXJS', 'image': 'assets/images/rxjs_logo.png'},
+        {'name': 'NODE', 'image': 'assets/images/node_logo.png'},
+        {'name': 'KOTLIN', 'image': 'assets/images/kotlin_logo.png'},
+        {'name': 'GCP', 'image': 'assets/images/gcp_logo.png'},
     ];
 
     constructor() {
