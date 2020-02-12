@@ -3,11 +3,11 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    transform: translateX(0px) translateY(0px) rotateX(40deg) rotateZ(30deg);
+    //transform: translateX(0px) translateY(0px) rotateX(40deg) rotateZ(20deg);
 }
 
 .tilted-group {
-    transform: translateX(0px) translateY(0px) rotateX(45deg) rotateZ(45deg);
+    transform: translateX(0px) translateY(0px) rotateX(45deg) rotateZ(25deg);
     position: fixed;
     z-index: 2;
     transform-origin: left top;
