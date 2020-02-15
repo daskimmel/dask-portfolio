@@ -27,31 +27,3 @@
     font-family: "Century Gothic", sans-serif;
     color: white;
 }
-
-
-@keyframes slideInFromTop {
-    0% {
-        transform: translateY(-1000%) translateZ(0);
-    }
-    100% {
-        transform: translateY(0) ;
-    }
-}
-
-.tile {
-    animation: 2s ease-out slideInFromTop;
-}
-
-
-@keyframes changeColor {
-    0% {
-        color: transparent;
-    }
-    100% {
-        color: #fff;
-    }
-}
-
-.tile-name {
-    animation: 3s ease-in changeColor;
-}
