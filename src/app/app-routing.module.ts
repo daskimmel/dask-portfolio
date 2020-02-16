@@ -5,9 +5,9 @@ import {HomeComponent} from './pages/home/home.component';
 import {ExperienceComponent} from './pages/experience/experience.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'skills', component: SkillsComponent },
-  { path: 'experience', component: ExperienceComponent }
+  { path: '', component: HomeComponent, data: {animation: 'HomePage'} },
+  { path: 'skills', component: SkillsComponent, data: {animation: 'SkillsPage'} },
+  { path: 'experience', component: ExperienceComponent, data: {animation: 'ExperiencePage'} }
 ];
 
 @NgModule({

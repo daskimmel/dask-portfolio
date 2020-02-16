@@ -4,8 +4,7 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     overflow: hidden;
-    background: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,0,0));
-    background-repeat: no-repeat;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)) no-repeat;
     background-size: 80%;
     animation: animate 7s linear infinite;
     -webkit-background-clip: text;
@@ -17,13 +16,19 @@
 }
 
 .home-body{
-    font-family: 'Rock Salt', cursive;
+    font-family: 'Century Gothic', sans-serif;
     font-size: 1.5em;
 }
 
 @keyframes animate {
     0% {
         background-position: -500%;
+    }
+    35%{
+        background-position: -100%;
+    }
+    65%{
+        background-position: 100%;
     }
     100% {
         background-position: 500%;
