@@ -1,21 +1,60 @@
-#container DIV
+.row
 {
-    margin:50px;
-    padding:50px;
-    background-color:pink;
+    margin:30px 10px;
+    padding:10px;
+    display: flex;
 }
 
-.hidden{
-    opacity:0;
+.container{
+    height: 100%;
+    position: relative;
 }
 
-.fadeIn{
-    animation: fadeIn 1s linear;
+.flex-start{
+    justify-content: flex-start;
 }
 
+.flex-end{
+    justify-content: flex-end;
+}
 
+experience-card-component{
+    width: 40%;
+}
 
-@keyframes fadeIn {
-    0% { opacity: 0 }
-    100% { opacity: 1}
+.experience-header{
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 4em;
+    text-align: center;
+}
+
+.timeline-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.timeline{
+    height: 100%;
+    position: absolute;
+    background-color: rgba( 255, 255, 255, 0.5);
+    width: 40px;
+}
+
+.timeline-circle{
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: -20px;
+}
+
+.timeline-circle-top{
+    top: -20px;
+}
+
+.timeline-circle-bottom{
+    bottom: -20px;
 }

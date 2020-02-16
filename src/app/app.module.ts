@@ -10,6 +10,7 @@ import {HomeComponent} from './pages/home/home.component';
 import {NavigationComponent} from './ui/navigation/navigation.component';
 import {ExperienceComponent} from './pages/experience/experience.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { ExperienceCardComponent } from './ui/experience-card/experience-card.component';
 
 @NgModule({
     declarations: [
@@ -19,7 +20,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
         TileGroupComponent,
         HomeComponent,
         NavigationComponent,
-        ExperienceComponent
+        ExperienceComponent,
+        ExperienceCardComponent
     ],
     imports: [
         BrowserModule,
