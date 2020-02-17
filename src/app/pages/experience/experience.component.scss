@@ -24,7 +24,7 @@ experience-card-component{
 
 .experience-header{
     font-family: 'Rock Salt', sans-serif;
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
 }
 
@@ -49,6 +49,9 @@ experience-card-component{
     width: 80px;
     height: 80px;
     left: -20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .timeline-circle-top{
@@ -57,4 +60,20 @@ experience-card-component{
 
 .timeline-circle-bottom{
     bottom: -20px;
+}
+
+.timeline-text{
+    font-family: 'Rock Salt', sans-serif;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .flex-start{justify-content: flex-end}
+    .timeline-container{justify-content: flex-start}
+    .timeline{margin-left: 15px}
+    experience-card-component{width: 90%}
+    .experience-header{
+        font-size: 2em;
+    }
 }

@@ -23,11 +23,11 @@ export class SkillsComponent implements OnInit {
         {'name': 'NODE', 'image': 'assets/images/skills/node_logo.png'},
         {'name': 'JAVA', 'image': 'assets/images/skills/java_logo.png'},
         {'name': 'PYTHON', 'image': 'assets/images/skills/python_logo.png'},
+        {'name': 'KOTLIN', 'image': 'assets/images/skills/kotlin_logo.png'},
+        {'name': 'ANDROID', 'image': 'assets/images/skills/android_logo.png'},
         {'name': 'DOCKER', 'image': 'assets/images/skills/docker_logo.png'},
         {'name': 'POSTGRES', 'image': 'assets/images/skills/postgres_logo.png'},
         {'name': 'GIT', 'image': 'assets/images/skills/git_logo.png'},
-        {'name': 'KOTLIN', 'image': 'assets/images/skills/kotlin_logo.png'},
-        {'name': 'ANDROID', 'image': 'assets/images/skills/android_logo.png'},
         {'name': 'GCP', 'image': 'assets/images/skills/gcp_logo.png'},
     ];
 
