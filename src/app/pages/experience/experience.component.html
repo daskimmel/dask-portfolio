@@ -6,8 +6,12 @@
 <div class="container">
     <div class="timeline-container">
         <div class="timeline">
-            <div class="timeline-circle timeline-circle-top"></div>
-            <div class="timeline-circle timeline-circle-bottom"></div>
+            <div class="timeline-circle timeline-circle-top">
+                <div class="timeline-text">2016</div>
+            </div>
+            <div class="timeline-circle timeline-circle-bottom">
+                <div class="timeline-text">2020</div>
+            </div>
         </div>
     </div>
     <div class="row experience-row {{i % 2 == 0 ? 'flex-start' : 'flex-end'}}" *ngFor="let experience of experienceAttributes; index as i">

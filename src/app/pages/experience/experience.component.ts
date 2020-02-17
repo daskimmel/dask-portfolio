@@ -10,8 +10,8 @@ export class ExperienceComponent implements AfterViewInit {
 
     experienceAttributes: Array<ExperienceAttributes> = [
         {'header': 'MSU Denver', 'body': 'The beginning of my adventure into software development. I have been attending university intermittently ' +
-                'since this time, only to take breaks as I have been given opportunities to work in the field and improve my skills with hands-on experience.' +
-                'As of February 2020, I have 18 credits left to finish my degree, slowly chipping away at my classes while honing my development' +
+                'since this time, only to take breaks as I have been given opportunities to work in the field and improve my skills with hands-on experience. ' +
+                'As of February 2020, I have 18 credits left to finish my degree, slowly chipping away at my classes while honing my development ' +
                 'abilities.', images: ['assets/images/experience/msu_denver_logo.png']},
         {'header': 'Transporta Solutions', 'body': 'Built an SQL database and backend system using Python and PostGres to create an efficient ' +
                 'and well designed system. Decreased customer drop-off rate by 40% by designing simple on-boarding experiences and increased ' +

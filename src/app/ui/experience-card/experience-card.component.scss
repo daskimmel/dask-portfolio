@@ -23,6 +23,7 @@
     max-width: 100%;
 }
 .experience-card-secondary-image{
+    margin-top: 10px;
     max-height: 30px;
     max-width: 100%;
 }
@@ -31,11 +32,13 @@
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .experience-secondary-images{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
