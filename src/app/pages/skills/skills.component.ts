@@ -29,6 +29,11 @@ export class SkillsComponent implements OnInit {
         {'name': 'POSTGRES', 'image': 'assets/images/skills/postgres_logo.png'},
         {'name': 'GIT', 'image': 'assets/images/skills/git_logo.png'},
         {'name': 'GCP', 'image': 'assets/images/skills/gcp_logo.png'},
+        {'name': 'JENKINS', 'image': 'assets/images/skills/jenkins_logo.png'},
+        {'name': 'LOCUST', 'image': 'assets/images/skills/locust_logo.png'},
+        {'name': 'NGINX', 'image': 'assets/images/skills/nginx_logo.png'},
+        {'name': 'RABBITMQ', 'image': 'assets/images/skills/rabbitmq_logo.png'},
+        {'name': 'JQUERY', 'image': 'assets/images/skills/jquery_logo.png'},
     ];
 
     constructor() {

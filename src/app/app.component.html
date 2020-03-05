@@ -1,8 +1,8 @@
 <navigation-component></navigation-component>
 <br/>
-<div class="container">
-    <div class="row" [@routeAnimations]="prepareRoute(outlet)">
+<div>
+    <div [@routeAnimations]="prepareRoute(outlet)">
         <router-outlet #outlet="outlet"></router-outlet>
     </div>
 </div>
-
+<clouds-component></clouds-component>

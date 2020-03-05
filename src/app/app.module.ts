@@ -11,6 +11,7 @@ import {NavigationComponent} from './ui/navigation/navigation.component';
 import {ExperienceComponent} from './pages/experience/experience.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { ExperienceCardComponent } from './ui/experience-card/experience-card.component';
+import { CloudsComponent } from './ui/clouds/clouds.component';
 
 @NgModule({
     declarations: [
@@ -21,7 +22,8 @@ import { ExperienceCardComponent } from './ui/experience-card/experience-card.co
         HomeComponent,
         NavigationComponent,
         ExperienceComponent,
-        ExperienceCardComponent
+        ExperienceCardComponent,
+        CloudsComponent
     ],
     imports: [
         BrowserModule,
