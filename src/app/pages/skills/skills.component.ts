@@ -34,6 +34,7 @@ export class SkillsComponent implements OnInit {
         {'name': 'NGINX', 'image': 'assets/images/skills/nginx_logo.png'},
         {'name': 'RABBITMQ', 'image': 'assets/images/skills/rabbitmq_logo.png'},
         {'name': 'JQUERY', 'image': 'assets/images/skills/jquery_logo.png'},
+        {'name': 'LEAFLET', 'image': 'assets/images/skills/leaflet_logo.png'},
     ];
 
     constructor() {
