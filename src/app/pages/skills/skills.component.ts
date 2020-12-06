@@ -17,10 +17,10 @@ export class SkillsComponent implements OnInit {
         {'name': 'CSS3', 'image': 'assets/images/skills/css3_logo.png'},
         {'name': 'JAVASCRIPT', 'image': 'assets/images/skills/javascript_logo.png'},
         {'name': 'TYPESCRIPT', 'image': 'assets/images/skills/typescript_logo.png'},
+        {'name': 'NODE', 'image': 'assets/images/skills/node_logo.png'},
+        {'name': 'REDUX', 'image': 'assets/images/skills/redux_logo.png'},
         {'name': 'RXJS', 'image': 'assets/images/skills/rxjs_logo.png'},
         {'name': 'NGRX', 'image': 'assets/images/skills/ngrx_logo.png'},
-        {'name': 'REDUX', 'image': 'assets/images/skills/redux_logo.png'},
-        {'name': 'NODE', 'image': 'assets/images/skills/node_logo.png'},
         {'name': 'JAVA', 'image': 'assets/images/skills/java_logo.png'},
         {'name': 'PYTHON', 'image': 'assets/images/skills/python_logo.png'},
         {'name': 'KOTLIN', 'image': 'assets/images/skills/kotlin_logo.png'},
@@ -35,6 +35,8 @@ export class SkillsComponent implements OnInit {
         {'name': 'RABBITMQ', 'image': 'assets/images/skills/rabbitmq_logo.png'},
         {'name': 'JQUERY', 'image': 'assets/images/skills/jquery_logo.png'},
         {'name': 'LEAFLET', 'image': 'assets/images/skills/leaflet_logo.png'},
+        {'name': 'AG-GRID', 'image': 'assets/images/skills/aggrid_logo.png'},
+        {'name': 'FORMIK', 'image': 'assets/images/skills/formik_logo.png'},
     ];
 
     constructor() {

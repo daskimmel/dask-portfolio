@@ -13,6 +13,7 @@
                 <div class="timeline-text">2020</div>
             </div>
         </div>
+        <br/>
     </div>
     <div class="row experience-row {{i % 2 == 0 ? 'flex-start' : 'flex-end'}}" *ngFor="let experience of experienceAttributes; index as i">
         <experience-card-component [experienceAttributes]="experience"></experience-card-component>

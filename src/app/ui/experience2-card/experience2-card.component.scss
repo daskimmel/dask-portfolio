@@ -1,0 +1,59 @@
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.experience-content{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.experience-card{
+    background-color: rgba( 255, 255, 255, 0.5);
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.experience-card-header{
+    font-family: 'Rock Salt', cursive;
+    text-align: center;
+}
+
+.experience-card-body{
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.experience-card-image{
+    max-height: 50px;
+    max-width: 100%;
+}
+.experience-card-secondary-image{
+    margin-top: 10px;
+    max-height: 30px;
+    max-width: 100%;
+}
+
+.experience-images{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.experience-secondary-images{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

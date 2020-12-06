@@ -58,6 +58,21 @@ export class ExperienceComponent implements AfterViewInit {
                 'assets/images/skills/typescript_logo.png',
             ]
         },
+        {'header': 'Charter', 'body': 'Full-stack development with React and Node, working to automate the manual testing processes' +
+                'that have existed for telecommunications hardware within our organization. Using agile methodology to efficiently build' +
+                '',
+            images: ['assets/images/experience/charter_logo.png'],
+            secondaryImages: [
+                'assets/images/skills/react_logo.png',
+                'assets/images/skills/node_logo.png',
+                'assets/images/skills/angular_logo.png',
+                'assets/images/skills/html5_logo.png',
+                'assets/images/skills/css3_logo.png',
+                'assets/images/skills/javascript_logo.png',
+                'assets/images/skills/aggrid_logo.png',
+                'assets/images/skills/formik_logo.png',
+            ]
+        },
     ];
 
     constructor(private elem: ElementRef) {

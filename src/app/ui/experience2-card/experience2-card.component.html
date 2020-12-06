@@ -1,0 +1,18 @@
+
+<div class="item" [ngStyle]="{'background-color': experienceAttributes.color}">
+    <div class="experience-content">
+        <div>
+            <div class="experience-card-header">{{experienceAttributes.header}}</div><br/>
+            <div class="experience-card-body">{{experienceAttributes.body}}</div><br/>
+        </div>
+        <div>
+            <div class="experience-images">
+                <img class="experience-card-image" src="{{imgSrc}}" *ngFor="let imgSrc of experienceAttributes.images" alt="{{experienceAttributes.header}}"/>
+            </div>
+            <div class="experience-secondary-images">
+                <img class="experience-card-secondary-image" src="{{imgSrc}}" *ngFor="let imgSrc of experienceAttributes.secondaryImages" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+
