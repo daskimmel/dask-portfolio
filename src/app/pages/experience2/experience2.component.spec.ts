@@ -1,11 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { Experience2Component } from './experience2.component';
 import {By} from '@angular/platform-browser';
-import {ExperienceCardComponent} from '../../ui/experience-card/experience-card.component';
 import {DebugElement} from '@angular/core';
-import {ExperienceAttributes} from '../../pojo/experience-attributes';
-import {Experience2CardComponent} from '../../ui/experience2-card/experience2-card.component';
+import {ExperienceAttributes} from 'src/app/pojo/experience-attributes';
+import {Experience2CardComponent} from 'src/app/ui/experience2-card/experience2-card.component';
 
 describe('ExperienceComponent', () => {
   let component: Experience2Component;
@@ -39,16 +37,18 @@ describe('ExperienceComponent', () => {
     const experienceAttributes: Array<ExperienceAttributes> = [{
       'header': fakeHeader1,
       'body': fakeBody1,
-      images: []
+      'images': [],
+      'color': 'white'
     }, {
       'header': fakeHeader2,
       'body': fakeBody2,
-      images: []
+      'images': [],
+      'color': 'white'
     }];
     component.experienceAttributes = experienceAttributes;
     fixture.detectChanges();
 
-    const experienceCards: DebugElement[] = fixture.debugElement.queryAll(By.directive(ExperienceCardComponent));
+    const experienceCards: DebugElement[] = fixture.debugElement.queryAll(By.directive(Experience2CardComponent));
     expect(experienceCards.length).toEqual(experienceAttributes.length);
   });
 });

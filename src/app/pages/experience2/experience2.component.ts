@@ -1,6 +1,6 @@
 import {AfterViewInit, Component, ElementRef, QueryList, ViewChildren} from '@angular/core';
-import {ExperienceAttributes} from '../../pojo/experience-attributes';
-import {Experience2CardComponent} from '../../ui/experience2-card/experience2-card.component';
+import {ExperienceAttributes} from 'src/app/pojo/experience-attributes';
+import {Experience2CardComponent} from 'src/app/ui/experience2-card/experience2-card.component';
 import {interval} from 'rxjs';
 import {take} from 'rxjs/operators';
 
@@ -14,9 +14,10 @@ export class Experience2Component implements AfterViewInit {
     @ViewChildren(Experience2CardComponent) experienceCards: QueryList<Experience2CardComponent>;
 
     experienceAttributes: Array<ExperienceAttributes> = [
-        {'header': 'Charter', 'body': 'Full-stack development with React and Node, working to automate the manual testing processes' +
-                'that have existed for telecommunications hardware within our organization. Using agile methodology to efficiently build' +
-                '',
+        {'header': 'Charter', 'body': 'Full-stack development with React and Node, working to automate the manual testing processes ' +
+                'that have existed for telecommunications hardware within our organization. Using agile methodology to efficiently build ' +
+                'a number of microservices with constantly changing requirements, my team went above and beyond to develop quality products for ' +
+                'our customers that were always delivered on time.',
             images: ['assets/images/experience/charter_logo.png'],
             secondaryImages: [
                 'assets/images/skills/react_logo.png',
@@ -80,10 +81,12 @@ export class Experience2Component implements AfterViewInit {
             ],
             color: '#d6b6ff'
         },
-        {'header': 'MSU Denver', 'body': 'The beginning of my adventure into software development. I have been attending university intermittently ' +
-                'since this time, only to take breaks as I have been given opportunities to work in the field and improve my skills with hands-on experience. ' +
-                'As of February 2020, I have 18 credits left to finish my degree, slowly chipping away at my classes while honing my development ' +
-                'abilities.',
+        {'header': 'MSU Denver', 'body': 'The beginning of my adventure into software development. ' +
+                'My time at MSU Denver helped me to build my core foundation of knowledge that has gotten me to where I am now.  ' +
+                'The experience gained during my time at the university was the beginning of a never-ending journey to learn ' +
+                'as much as I can about software development and the world surrounding it. Building a strong base of skills ' +
+                'at MSU Denver has surely contributed to success in my career ' +
+                'and I am grateful for having spent time learning at this institution.' ,
             images: ['assets/images/experience/msu_denver_logo.png'],
             color: '#c79dfd'
         },

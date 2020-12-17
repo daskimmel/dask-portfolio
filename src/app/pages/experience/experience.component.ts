@@ -12,7 +12,10 @@ export class ExperienceComponent implements AfterViewInit {
         {'header': 'MSU Denver', 'body': 'The beginning of my adventure into software development. I have been attending university intermittently ' +
                 'since this time, only to take breaks as I have been given opportunities to work in the field and improve my skills with hands-on experience. ' +
                 'As of February 2020, I have 18 credits left to finish my degree, slowly chipping away at my classes while honing my development ' +
-                'abilities.', images: ['assets/images/experience/msu_denver_logo.png']},
+                'abilities.',
+            images: ['assets/images/experience/msu_denver_logo.png'],
+            color: 'white'
+        },
         {'header': 'Transporta Solutions', 'body': 'Built an SQL database and backend system using Python and PostGres to create an efficient ' +
                 'and well designed system. Decreased customer drop-off rate by 40% by designing simple on-boarding experiences and increased ' +
                 'overall UX by focusing on User Centered Design principles. Developed extensive front-end using JavaScript with HTML5, CSS3, ' +
@@ -26,7 +29,8 @@ export class ExperienceComponent implements AfterViewInit {
                 'assets/images/skills/html5_logo.png',
                 'assets/images/skills/css3_logo.png',
                 'assets/images/skills/javascript_logo.png',
-            ]
+            ],
+            color: 'white'
         },
         {'header': 'Diamond Edge Services', 'body': 'Automated a system that tracked, calculated, and updated live oil pipeline data based' +
                 ' on SMS input from workers in the field. Complete with a full administrative dashboard and unique views for each of their' +
@@ -39,7 +43,8 @@ export class ExperienceComponent implements AfterViewInit {
                 'assets/images/skills/html5_logo.png',
                 'assets/images/skills/css3_logo.png',
                 'assets/images/skills/javascript_logo.png',
-            ]
+            ],
+            color: 'white'
         },
         {'header': 'Corelogic', 'body': 'Full-stack development centered around Spring Boot and Angular to create internal tools for our ' +
                 'GIS and address processing teams. Using the extreme programming methodology allowed our team to produce high-quality code ' +
@@ -56,7 +61,8 @@ export class ExperienceComponent implements AfterViewInit {
                 'assets/images/skills/css3_logo.png',
                 'assets/images/skills/javascript_logo.png',
                 'assets/images/skills/typescript_logo.png',
-            ]
+            ],
+            color: 'white'
         },
         {'header': 'Charter', 'body': 'Full-stack development with React and Node, working to automate the manual testing processes' +
                 'that have existed for telecommunications hardware within our organization. Using agile methodology to efficiently build' +
@@ -71,7 +77,8 @@ export class ExperienceComponent implements AfterViewInit {
                 'assets/images/skills/javascript_logo.png',
                 'assets/images/skills/aggrid_logo.png',
                 'assets/images/skills/formik_logo.png',
-            ]
+            ],
+            color: 'white'
         },
     ];
 

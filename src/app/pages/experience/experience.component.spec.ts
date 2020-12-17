@@ -2,11 +2,12 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ExperienceComponent } from './experience.component';
 import {By} from '@angular/platform-browser';
-import {ExperienceCardComponent} from '../../ui/experience-card/experience-card.component';
+import {ExperienceCardComponent} from 'src/app/ui/experience-card/experience-card.component';
 import {DebugElement} from '@angular/core';
-import {ExperienceAttributes} from '../../pojo/experience-attributes';
+import {ExperienceAttributes} from 'src/app/pojo/experience-attributes';
+import {CloudsComponent} from 'src/app/ui/clouds/clouds.component';
 
-describe('ExperienceComponent', () => {
+describe('ExperienceOldComponent', () => {
   let component: ExperienceComponent;
   let fixture: ComponentFixture<ExperienceComponent>;
 
@@ -14,7 +15,8 @@ describe('ExperienceComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
           ExperienceComponent,
-          ExperienceCardComponent
+          ExperienceCardComponent,
+          CloudsComponent
       ]
     })
     .compileComponents();
@@ -24,6 +26,10 @@ describe('ExperienceComponent', () => {
     fixture = TestBed.createComponent(ExperienceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
+  });
+
+  afterEach(() => {
+    fixture.debugElement.nativeElement.remove();
   });
 
   it('should create', () => {
@@ -38,11 +44,13 @@ describe('ExperienceComponent', () => {
     const experienceAttributes: Array<ExperienceAttributes> = [{
       'header': fakeHeader1,
       'body': fakeBody1,
-      images: []
+      'images': [],
+      'color': 'white'
     }, {
       'header': fakeHeader2,
       'body': fakeBody2,
-      images: []
+      'images': [],
+      'color': 'white'
     }];
     component.experienceAttributes = experienceAttributes;
     fixture.detectChanges();

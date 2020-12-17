@@ -11,7 +11,7 @@ describe('TileGroupComponent', () => {
     TestBed.configureTestingModule({
       declarations: [
           TileGroupComponent,
-          TileComponent
+          TileComponent,
       ]
     })
     .compileComponents();

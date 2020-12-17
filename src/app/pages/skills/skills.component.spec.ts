@@ -1,21 +1,22 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { SkillsComponent } from './skills.component';
-import {ExperienceAttributes} from '../../pojo/experience-attributes';
+import {SkillsComponent} from './skills.component';
 import {DebugElement} from '@angular/core';
 import {By} from '@angular/platform-browser';
-import {ExperienceCardComponent} from '../../ui/experience-card/experience-card.component';
-import {TileAttributes} from '../../pojo/tile-attributes';
-import {TileComponent} from '../../ui/tile/tile.component';
+import {TileAttributes} from 'src/app/pojo/tile-attributes';
+import {TileComponent} from 'src/app/ui/tile/tile.component';
+import {TileGroupComponent} from 'src/app/ui/tile-group/tile-group.component';
 
-describe('SkillsComponentComponent', () => {
+describe('SkillsComponent', () => {
   let component: SkillsComponent;
   let fixture: ComponentFixture<SkillsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-          SkillsComponent
+          SkillsComponent,
+          TileComponent,
+          TileGroupComponent
       ]
     })
     .compileComponents();
@@ -27,12 +28,15 @@ describe('SkillsComponentComponent', () => {
     fixture.detectChanges();
   });
 
+  afterEach(() => {
+    fixture.debugElement.nativeElement.remove();
+  });
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });
 
-
-  it('should display right amount of experience cards', () => {
+  it('should display right amount of tiles', () => {
     const fakeHeader1 = "FAKE HEADER 1";
     const fakeHeader2 = "FAKE HEADER 2";
     const experienceAttributes: Array<TileAttributes> = [{
