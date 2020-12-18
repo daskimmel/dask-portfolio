@@ -5,7 +5,18 @@
        [value]="i"
        [checked]="i === selectedCard"
        (change)="setSelectedCard(i)"
-   />
+    />
+
+    <div class="carousel-button-container">
+        <div id="carousel-buttons" class="carousel-buttons">
+            <div class="carousel-button left-carousel-button" (click)="setPreviousCard()">
+                <div class="carousel-button-arrow">«</div>
+            </div>
+            <div class="carousel-button right-carousel-button" (click)="setNextCard()">
+                <div class="carousel-button-arrow">»</div>
+            </div>
+        </div>
+    </div>
 
     <main id="carousel">
         <experience2-card-component

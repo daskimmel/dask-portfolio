@@ -92,10 +92,23 @@ export class Experience2Component implements AfterViewInit {
         },
     ];
 
-    private selectedCard: number = 4;
+    private maxCardIndex = 4;
+    private selectedCard: number = this.maxCardIndex;
 
     private setSelectedCard(index){
         this.selectedCard = index;
+    }
+
+    private setNextCard(){
+        if(this.selectedCard < this.maxCardIndex){
+            this.setSelectedCard(this.selectedCard + 1);
+        }
+    }
+
+    private setPreviousCard(){
+        if(this.selectedCard > 0){
+            this.setSelectedCard(this.selectedCard - 1);
+        }
     }
 
     constructor(private elem: ElementRef) {

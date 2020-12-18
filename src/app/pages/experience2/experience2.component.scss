@@ -85,3 +85,44 @@ input:nth-of-type(5):checked ~ main#carousel {
     --position: 5;
 }
 
+// Carousel Left/Right buttons
+
+.carousel-button-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-buttons{
+    position: absolute;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.carousel-button{
+    position: absolute;
+    margin-top: 180px;
+    height: 40px;
+    width: 40px;
+    font-size: 44px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.carousel-button-arrow{
+    margin-top: -10px;
+}
+
+.left-carousel-button{
+    left: 0;
+}
+
+.right-carousel-button{
+    right: 0;
+}
+
