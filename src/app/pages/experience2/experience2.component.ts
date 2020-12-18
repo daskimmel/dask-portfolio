@@ -14,7 +14,7 @@ export class Experience2Component implements AfterViewInit {
     @ViewChildren(Experience2CardComponent) experienceCards: QueryList<Experience2CardComponent>;
 
     experienceAttributes: Array<ExperienceAttributes> = [
-        {'header': 'Charter', 'body': 'Full-stack development with React and Node, working to automate the manual testing processes ' +
+        {'header': 'Charter', 'body': 'Full-stack development with React, Node, and Python, working to automate the manual testing processes ' +
                 'that have existed for telecommunications hardware within our organization. Using agile methodology to efficiently build ' +
                 'a number of microservices with constantly changing requirements, my team went above and beyond to develop quality products for ' +
                 'our customers that were always delivered on time.',
@@ -22,12 +22,13 @@ export class Experience2Component implements AfterViewInit {
             secondaryImages: [
                 'assets/images/skills/react_logo.png',
                 'assets/images/skills/node_logo.png',
-                'assets/images/skills/angular_logo.png',
+                'assets/images/skills/python_logo.png',
                 'assets/images/skills/html5_logo.png',
                 'assets/images/skills/css3_logo.png',
                 'assets/images/skills/javascript_logo.png',
                 'assets/images/skills/aggrid_logo.png',
                 'assets/images/skills/formik_logo.png',
+                'assets/images/skills/git_logo.png',
             ],
             color: '#f4ecff'
         },
@@ -46,6 +47,7 @@ export class Experience2Component implements AfterViewInit {
                 'assets/images/skills/css3_logo.png',
                 'assets/images/skills/javascript_logo.png',
                 'assets/images/skills/typescript_logo.png',
+                'assets/images/skills/git_logo.png',
             ],
             color: '#eadafd'
         },
@@ -61,6 +63,7 @@ export class Experience2Component implements AfterViewInit {
                 'assets/images/skills/html5_logo.png',
                 'assets/images/skills/css3_logo.png',
                 'assets/images/skills/javascript_logo.png',
+                'assets/images/skills/git_logo.png',
             ],
             color: '#e0ccfb'
         },
@@ -78,6 +81,7 @@ export class Experience2Component implements AfterViewInit {
                 'assets/images/skills/html5_logo.png',
                 'assets/images/skills/css3_logo.png',
                 'assets/images/skills/javascript_logo.png',
+                'assets/images/skills/git_logo.png',
             ],
             color: '#d6b6ff'
         },
