@@ -31,7 +31,7 @@ export class Experience2Component implements AfterViewInit {
                 'assets/images/skills/mysql_logo.png',
                 'assets/images/skills/git_logo.png',
             ],
-            color: '#f4ecff'
+            color: '#e0ccfb'
         },
         {'header': 'Corelogic', 'body': 'Full-stack development centered around Spring Boot and Angular to create internal tools for our ' +
                 'GIS and address processing teams. Using the extreme programming methodology allowed our team to produce high-quality code ' +
@@ -50,7 +50,7 @@ export class Experience2Component implements AfterViewInit {
                 'assets/images/skills/typescript_logo.png',
                 'assets/images/skills/git_logo.png',
             ],
-            color: '#eadafd'
+            color: '#d6b6ff'
         },
         {'header': 'Diamond Edge Services', 'body': 'Automated a system that tracked, calculated, and updated live oil pipeline data based' +
                 ' on SMS input from workers in the field. Complete with a full administrative dashboard and unique views for each of their' +
@@ -66,7 +66,7 @@ export class Experience2Component implements AfterViewInit {
                 'assets/images/skills/javascript_logo.png',
                 'assets/images/skills/git_logo.png',
             ],
-            color: '#e0ccfb'
+            color: '#c79dfd'
         },
         {
             'header': 'Transporta Solutions', 'body': 'Built an SQL database and backend system using Python and PostGres to create an efficient ' +
@@ -93,12 +93,21 @@ export class Experience2Component implements AfterViewInit {
                 'at MSU Denver has surely contributed to success in my career ' +
                 'and I am grateful for having spent time learning at this institution.' ,
             images: ['assets/images/experience/msu_denver_logo.png'],
-            color: '#c79dfd'
+            color: '#e0ccfb'
         },
     ];
 
     private maxCardIndex = this.experienceAttributes.length - 1;
     private selectedCard: number = this.maxCardIndex;
+
+    constructor(private elem: ElementRef) {
+    }
+
+    ngAfterViewInit(): void {
+        interval(700).pipe(take(1)).subscribe(() => {
+            this.setSelectedCard(0);
+        });
+    }
 
     private setSelectedCard(index){
         this.selectedCard = index;
@@ -122,13 +131,31 @@ export class Experience2Component implements AfterViewInit {
         }
     }
 
-    constructor(private elem: ElementRef) {
+    private calculateHex(color) {
+        color = Math.round(color);
+        if (color < 0){
+            color = 0;
+        }else if (color > 255){
+            color = 255;
+        }
+
+        let s = color.toString(16);
+
+        return s.length < 2 ? "0" + s : s;
     }
 
-    ngAfterViewInit(): void {
-        interval(700).pipe(take(1)).subscribe(() => {
-            this.setSelectedCard(0);
-        });
+    private color2Hex(r, g, b) {
+        return "#" + this.calculateHex(r) + this.calculateHex(g) + this.calculateHex(b);
+    }
+
+    private darkenBackgroundColor(color: string){
+        const shade = 0.6;
+
+        const r = parseInt(color.substr(1, 2), 16) * shade;
+        const g = parseInt(color.substr(3, 2), 16) * shade;
+        const b = parseInt(color.substr(5, 2), 16) * shade;
+
+        return this.color2Hex(r, g, b);
     }
 
 }

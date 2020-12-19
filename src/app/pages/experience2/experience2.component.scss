@@ -115,7 +115,7 @@ input:nth-of-type(5):checked ~ main#carousel {
 
 .carousel-button-arrow{
     margin-top: -10px;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 .left-carousel-button{
