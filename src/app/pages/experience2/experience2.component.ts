@@ -28,6 +28,7 @@ export class Experience2Component implements AfterViewInit {
                 'assets/images/skills/javascript_logo.png',
                 'assets/images/skills/aggrid_logo.png',
                 'assets/images/skills/formik_logo.png',
+                'assets/images/skills/mysql_logo.png',
                 'assets/images/skills/git_logo.png',
             ],
             color: '#f4ecff'
@@ -96,7 +97,7 @@ export class Experience2Component implements AfterViewInit {
         },
     ];
 
-    private maxCardIndex = 4;
+    private maxCardIndex = this.experienceAttributes.length - 1;
     private selectedCard: number = this.maxCardIndex;
 
     private setSelectedCard(index){
@@ -107,11 +108,17 @@ export class Experience2Component implements AfterViewInit {
         if(this.selectedCard < this.maxCardIndex){
             this.setSelectedCard(this.selectedCard + 1);
         }
+        else{
+            this.setSelectedCard(0);
+        }
     }
 
     private setPreviousCard(){
         if(this.selectedCard > 0){
             this.setSelectedCard(this.selectedCard - 1);
+        }
+        else{
+            this.setSelectedCard(this.maxCardIndex);
         }
     }
 

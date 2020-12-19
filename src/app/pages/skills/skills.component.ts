@@ -10,9 +10,9 @@ export class SkillsComponent implements OnInit {
 
     tileList: Array<TileAttributes> = [
         {'name': 'ANGULAR', 'image': 'assets/images/skills/angular_logo.png'},
+        {'name': 'REACT', 'image': 'assets/images/skills/react_logo.png'},
         {'name': 'SPRING', 'image': 'assets/images/skills/spring_logo.png'},
         {'name': 'DJANGO', 'image': 'assets/images/skills/django_logo.png'},
-        {'name': 'REACT', 'image': 'assets/images/skills/react_logo.png'},
         {'name': 'HTML5', 'image': 'assets/images/skills/html5_logo.png'},
         {'name': 'CSS3', 'image': 'assets/images/skills/css3_logo.png'},
         {'name': 'JAVASCRIPT', 'image': 'assets/images/skills/javascript_logo.png'},
@@ -27,6 +27,7 @@ export class SkillsComponent implements OnInit {
         {'name': 'ANDROID', 'image': 'assets/images/skills/android_logo.png'},
         {'name': 'DOCKER', 'image': 'assets/images/skills/docker_logo.png'},
         {'name': 'POSTGRES', 'image': 'assets/images/skills/postgres_logo.png'},
+        {'name': 'MYSQL', 'image': 'assets/images/skills/mysql_logo.png'},
         {'name': 'GIT', 'image': 'assets/images/skills/git_logo.png'},
         {'name': 'GCP', 'image': 'assets/images/skills/gcp_logo.png'},
         {'name': 'JENKINS', 'image': 'assets/images/skills/jenkins_logo.png'},
@@ -36,6 +37,7 @@ export class SkillsComponent implements OnInit {
         {'name': 'JQUERY', 'image': 'assets/images/skills/jquery_logo.png'},
         {'name': 'LEAFLET', 'image': 'assets/images/skills/leaflet_logo.png'},
         {'name': 'AG-GRID', 'image': 'assets/images/skills/aggrid_logo.png'},
+        {'name': 'GITLAB', 'image': 'assets/images/skills/gitlab_logo.png'},
         {'name': 'FORMIK', 'image': 'assets/images/skills/formik_logo.png'},
     ];
 

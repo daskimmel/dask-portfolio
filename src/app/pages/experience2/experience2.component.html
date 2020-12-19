@@ -1,6 +1,7 @@
 
 <div class="carouselContainer">
     <input type="radio"
+       [ngStyle]="{display: 'none'}"
        *ngFor="let experience of experienceAttributes; index as i"
        [value]="i"
        [checked]="i === selectedCard"
@@ -24,4 +25,13 @@
                 [experienceAttributes]="experience" [ngStyle]="{'background-color': experience.color, '--offset': i}">
         </experience2-card-component>
     </main>
+</div>
+
+<div class="radio-button-container">
+    <div class="carousel-radio-buttons"
+         [ngClass]="{'selected-radio-button': i === selectedCard}"
+         (click)="setSelectedCard(i)"
+         [ngStyle]="{'background-color': i !== selectedCard && attr.color}"
+         *ngFor="let attr of experienceAttributes; index as i">
+    </div>
 </div>
